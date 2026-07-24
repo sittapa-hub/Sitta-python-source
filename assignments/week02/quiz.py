@@ -21,7 +21,9 @@ Below 18.5: Underweight
 weight = int(input("Enter your weight(kg) : "))
 height = float(input("Enter your height(m) : "))
 BMI = weight/(height**2)
-print("Your BMI : ",BMI)
+print(f"Your BMI : {BMI:.2f}")
+
+
 
 """
 Question 2: Currency Converter (20 points)
