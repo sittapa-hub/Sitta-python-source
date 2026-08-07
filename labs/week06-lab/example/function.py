@@ -131,6 +131,7 @@ print()
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
 # Example 1: Function with default parameter
+# default parameter ถ้าไม่ส่งค่า (title) มา ค่า(title) จะเท่ากับสิ่งที่กำหนดไว้ (Mr./Ms) ทันที
 def greet_with_title(name, title="Mr./Ms."):
     """Greets person with optional title"""
     print(f"Hello, {title} {name}!")
