@@ -40,12 +40,12 @@ except ValueError:
 
 print("\n=== STRING INDEXING ===")
 fruit = 'banana'
-print(f"fruit = {fruit}")
-print(f"fruit[1] = {fruit[1]}")  # 'a'
+print(f"fruit = {fruit}") #fruit = banana
+print(f"fruit[1] = {fruit[1]}")  # 'a' 
 
 n = 3
 w = fruit[n - 1]  # fruit[2]
-print(f"n = {n}")
+print(f"n = {n}") # n = 3
 print(f"w = fruit[n-1] = {w}")  # 'n'
 
 # Show indexing diagram
@@ -84,9 +84,17 @@ str2 = 'World!'
 result = str1 + str2
 print(f"str1 + str2 = {result}")
 
+#output
+#=== CONCATENATION AND MULTIPLICATION ===
+#Hello + World! =  Hello World!
+
+
 # Multiplication
 repeat = str1 * 3
 print(f"str1 * 3 = {repeat}")
+#output
+# Multiplication
+#str1 * 3 = str1str1str1
 
 # ===========================
 # 6. APPENDING STRINGS
@@ -94,10 +102,14 @@ print(f"str1 * 3 = {repeat}")
 
 print("\n=== APPENDING STRINGS ===")
 greeting = 'hello'
-name = input("Enter your name: ")
-greeting += name
-greeting += ". welcome to pune"
+name = input("Enter your name: ") # สมมติผู้ใช้พิมพ์ Boonchoo
+greeting += name # greeting = greeting + name -> helloBoonchoo 
+greeting += ". welcome to pune" #greeting = greeting + ". welcome to pune" 
+#->helloBoonchoo. welcome to pune  
 print(greeting)
+#output
+#=== APPENDING STRINGS ===
+#helloBoonchoo. welcome to pune
 
 # ===========================
 # 7. ITERATING AND COUNTING
@@ -110,6 +122,8 @@ for letter in text:
     if letter == 'l':
         count += 1
 print(f"{count} letters 'l' found in '{text}'")
+#output
+#3 letters 'l' found in 'Hello World'
 
 # ===========================
 # 8. MEMBERSHIP TEST
@@ -118,6 +132,10 @@ print(f"{count} letters 'l' found in '{text}'")
 print("\n=== MEMBERSHIP TEST ===")
 print("'a' in 'program':", 'a' in 'program')  # True
 print("'at' not in 'battle':", 'at' not in 'battle')  # False
+#output
+#=== MEMBERSHIP TEST ===
+#'a' in 'program': True
+#'at' not in 'battle': False
 
 # ===========================
 # 9. STRING IMMUTABILITY 
@@ -147,17 +165,34 @@ print(f"id of str3 is {id(str3)}")  # Same ID as current str1
 print("\n=== ESCAPE CHARACTERS ===")
 print("New line example:")
 print("Line 1\nLine 2")
+#output
+#=== ESCAPE CHARACTERS ===
+#New line example:
+#Line 1
+#Line 2
 
 print("Tab example:")
 print("Column1\tColumn2\tColumn3")
+#output
+#Tab example:
+#Column1    Column2     Column3
 
 print("Backslash example:")
 print("Path: C:\\Users\\Python")
+#output
+#Backslash example:
+#Path: C:\Users\Python
 
 print("Quote examples:")
 print('He said, "What\'s there?"')
 print("He said, \"What's there?\"")
 print('''He said, "What's there?"''')
+#output
+#Quote examples:
+#He said, "What's there?"
+#He said, "What's there?"
+#He said, "What's there?"
+
 
 # Raw strings
 print("\nRaw string example:")
@@ -176,6 +211,10 @@ age = 8
 print("Using %% formatting:")
 print("name=%s and age=%d" % (name, age))
 print("name=%s and age=%d" % ("ankita", 6))
+#output
+#Using %% formatting:
+#name=ashish and age=8
+#name=ankita and age=6
 
 # .format() method
 print("\nUsing .format() method:")
@@ -183,7 +222,9 @@ id_num = 10
 name = 'shankar'
 sal = 20000
 
+
 # Different format styles
+    #id_num name sal
 str1 = '{},{},{}'.format(id_num, name, sal)
 print(str1)  # 10,shankar,20000
 
@@ -192,6 +233,11 @@ print(str2)  # 10 - shankar - 20000
 
 str3 = 'id={}\nname={}\nsal={}'.format(id_num, name, sal)
 print(str3)
+#output
+#id=10
+#name=shankar
+#sal=20000
+
 
 # ===========================
 # 12. STRING METHODS EXAMPLES
@@ -205,28 +251,46 @@ print(f"Original: {text}")
 print(f"Upper: {text.upper()}")
 print(f"Lower: {text.lower()}")
 print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Capitalize: {text.capitalize()}") 
+#output
+#Original: welcome to the world of python
+#Upper: WELCOME TO THE WORLD OF PYTHON
+#Lower: welcome to the world of python
+#Title: Welcome To The World Of Python
+#Capitalize: Welcome to the world of python
 
 # Search methods
-print(f"Find 'world': {text.find('world')}")
-print(f"Count 'o': {text.count('o')}")
-print(f"Starts with 'welcome': {text.startswith('welcome')}")
-print(f"Ends with 'python': {text.endswith('python')}")
+print(f"Find 'world': {text.find('world')}") #Find 'world': 15
+print(f"Count 'o': {text.count('o')}") #Count 'o': 5
+print(f"Starts with 'welcome': {text.startswith('welcome')}")#Starts with 'welcome': True
+print(f"Ends with 'python': {text.endswith('python')}")# Ends with 'python': True
 
 # Modification methods
-print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
+print(f"Replace 'python' with 'java': {text.replace('python', 'java')}") 
 words = text.split()
 print(f"Split into words: {words}")
 print(f"Join with '-': {'-'.join(words)}")
+#output
+#Replace 'python' with 'java': welcome to the world of java
+#Split into words: ['welcome', 'to', 'the', 'world', 'of', 'python']
+#Join with '-': welcome-to-the-world-of-python
+
 
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
+print(f"isalnum(): {test_str.isalnum()}")#อักษร+เลข ไม่อักขระพิเศษ
+print(f"isalpha(): {test_str.isalpha()}")#อักษรอย่างเดียว
+print(f"isdigit(): {test_str.isdigit()}")#ตัวเลขอย่างเดียว
+print(f"isupper(): {test_str.isupper()}")#ใหญ่
+print(f"islower(): {test_str.islower()}")#เล็ก
+#output
+#Validation methods for 'Hello123':
+#isalnum(): True
+#isalpha(): False
+#isdigit(): False
+#isupper(): False
+#islower(): False
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
