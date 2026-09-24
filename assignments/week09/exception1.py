@@ -15,12 +15,15 @@ try:
     elif operator == "/":
         result = num1 / num2
     else:
-        raise ValueError("ต้องกรอกเครืองหมาย +,-,*,/ เท่านั้น")
+        raise ValueError("ต้องกรอกเครื่องหมาย +,-,*,/ เท่านั้น")
 
     print(f"{num1} {operator} {num2} = {result}")
 
-except ValueError:
-    print("กรุณากรอกตัวเลขเท่านั้น")
+except ValueError as error:
+    if "ต้องกรอกเครื่องหมาย +,-,*,/ เท่านั้น" in str(error):
+        print(f"ข้อมูลไม่ถูกต้อง: {error}")
+    else:
+        print("กรุณากรอกตัวเลขเท่านั้น")
 
 except ZeroDivisionError:
      print("ไม่สามารถหารด้วยศูนย์ได้")

@@ -9,4 +9,4 @@ for s in range(len(score_list)):
     if score_list[s] >= 50:
         print(f"Student {s + 1}: {score_list[s]} -> ผ่าน")
     else:
-        print(f"Student {s + 1}: {score_list[s]} -> ไม่ผ่าน")
+        print(f"Student {s + 1}: {score_list[s]} -> ไม่ผ่าน")   
