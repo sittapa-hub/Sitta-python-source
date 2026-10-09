@@ -2,12 +2,12 @@ class BankAccount:
     
     def __init__(self, account_number, initial_balance=0):
         self.account_number = account_number
-        self.__balance = initial_balance  # Private attribute
+        self.__balance = initial_balance  # Private attribute # สามารถช่อนได้โดยใส่ __
         self.__transaction_history = []   # Private attribute
     
-    # Public method to access private balance
+    # Public method to access private balance 
     def get_balance(self):
-        return self.__balance
+        return self.__balance 
     
     # Public method to deposit money
     def deposit(self, amount):

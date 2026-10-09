@@ -1,10 +1,11 @@
+#แนวทางในการแก้ปัญหา temple / blueprint / ตรายาง
 class BankAccount:
     """A simple bank account class"""
     
     def __init__(self, account_holder, initial_balance=0):
         self.account_holder = account_holder
         self.balance = initial_balance
-        self.transaction_history = []
+        self.transaction_history = [] #เข้าถึงข้อมูล อ่านข้อมูล เขียนข้อมูล
     
     def deposit(self, amount):
         """Method to deposit money"""
@@ -39,6 +40,9 @@ class BankAccount:
 
 # Example usage
 account = BankAccount("John Doe", 1000)
+print(account.balance)
+account.balance = 100000
+
 print(account.get_balance())
 print(account.deposit(500))
 print(account.withdraw(200))

@@ -24,6 +24,7 @@ class Dog(Animal):
     # Method overriding
     def make_sound(self):
         print(f"{self.name} barks: Woof!")
+
     
     # New method specific to Dog
     def fetch(self):
