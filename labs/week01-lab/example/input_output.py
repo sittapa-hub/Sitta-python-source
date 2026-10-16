@@ -16,7 +16,11 @@ print("Next year you will be", age + 1, "years old")
 # Exercise 3: Multiple Inputs
 print("\n=== Exercise 3: Multiple Inputs ===")
 first_name = input("Enter your first name: ")
+<<<<<<< HEAD
 last_name = input("Enter your last name: ") 
+=======
+last_name = input("Enter your last name: ")
+>>>>>>> upstream/main
 birth_year = int(input("Enter your birth year: "))
 
 current_year = 2025

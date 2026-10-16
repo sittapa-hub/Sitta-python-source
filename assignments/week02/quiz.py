@@ -18,6 +18,10 @@ Below 18.5: Underweight
 
 """
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/main
 """
 Question 2: Currency Converter (20 points)
 
@@ -29,4 +33,8 @@ Ask for the amount to convert
 Use exchange rate: 1 USD = 35.5 THB
 Display result with 2 decimal places
 Show the calculation formula used
+<<<<<<< HEAD
 """
+=======
+"""
+>>>>>>> upstream/main

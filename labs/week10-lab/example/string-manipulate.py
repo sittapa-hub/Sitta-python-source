@@ -40,12 +40,21 @@ except ValueError:
 
 print("\n=== STRING INDEXING ===")
 fruit = 'banana'
+<<<<<<< HEAD
 print(f"fruit = {fruit}") #fruit = banana
 print(f"fruit[1] = {fruit[1]}")  # 'a' 
 
 n = 3
 w = fruit[n - 1]  # fruit[2]
 print(f"n = {n}") # n = 3
+=======
+print(f"fruit = {fruit}")
+print(f"fruit[1] = {fruit[1]}")  # 'a'
+
+n = 3
+w = fruit[n - 1]  # fruit[2]
+print(f"n = {n}")
+>>>>>>> upstream/main
 print(f"w = fruit[n-1] = {w}")  # 'n'
 
 # Show indexing diagram
@@ -84,6 +93,7 @@ str2 = 'World!'
 result = str1 + str2
 print(f"str1 + str2 = {result}")
 
+<<<<<<< HEAD
 #output
 #=== CONCATENATION AND MULTIPLICATION ===
 #Hello + World! =  Hello World!
@@ -95,6 +105,11 @@ print(f"str1 * 3 = {repeat}")
 #output
 # Multiplication
 #str1 * 3 = str1str1str1
+=======
+# Multiplication
+repeat = str1 * 3
+print(f"str1 * 3 = {repeat}")
+>>>>>>> upstream/main
 
 # ===========================
 # 6. APPENDING STRINGS
@@ -102,6 +117,7 @@ print(f"str1 * 3 = {repeat}")
 
 print("\n=== APPENDING STRINGS ===")
 greeting = 'hello'
+<<<<<<< HEAD
 name = input("Enter your name: ") # สมมติผู้ใช้พิมพ์ Boonchoo
 greeting += name # greeting = greeting + name -> helloBoonchoo 
 greeting += ". welcome to pune" #greeting = greeting + ". welcome to pune" 
@@ -110,6 +126,12 @@ print(greeting)
 #output
 #=== APPENDING STRINGS ===
 #helloBoonchoo. welcome to pune
+=======
+name = input("Enter your name: ")
+greeting += name
+greeting += ". welcome to pune"
+print(greeting)
+>>>>>>> upstream/main
 
 # ===========================
 # 7. ITERATING AND COUNTING
@@ -122,8 +144,11 @@ for letter in text:
     if letter == 'l':
         count += 1
 print(f"{count} letters 'l' found in '{text}'")
+<<<<<<< HEAD
 #output
 #3 letters 'l' found in 'Hello World'
+=======
+>>>>>>> upstream/main
 
 # ===========================
 # 8. MEMBERSHIP TEST
@@ -132,10 +157,13 @@ print(f"{count} letters 'l' found in '{text}'")
 print("\n=== MEMBERSHIP TEST ===")
 print("'a' in 'program':", 'a' in 'program')  # True
 print("'at' not in 'battle':", 'at' not in 'battle')  # False
+<<<<<<< HEAD
 #output
 #=== MEMBERSHIP TEST ===
 #'a' in 'program': True
 #'at' not in 'battle': False
+=======
+>>>>>>> upstream/main
 
 # ===========================
 # 9. STRING IMMUTABILITY 
@@ -165,6 +193,7 @@ print(f"id of str3 is {id(str3)}")  # Same ID as current str1
 print("\n=== ESCAPE CHARACTERS ===")
 print("New line example:")
 print("Line 1\nLine 2")
+<<<<<<< HEAD
 #output
 #=== ESCAPE CHARACTERS ===
 #New line example:
@@ -182,17 +211,28 @@ print("Path: C:\\Users\\Python")
 #output
 #Backslash example:
 #Path: C:\Users\Python
+=======
+
+print("Tab example:")
+print("Column1\tColumn2\tColumn3")
+
+print("Backslash example:")
+print("Path: C:\\Users\\Python")
+>>>>>>> upstream/main
 
 print("Quote examples:")
 print('He said, "What\'s there?"')
 print("He said, \"What's there?\"")
 print('''He said, "What's there?"''')
+<<<<<<< HEAD
 #output
 #Quote examples:
 #He said, "What's there?"
 #He said, "What's there?"
 #He said, "What's there?"
 
+=======
+>>>>>>> upstream/main
 
 # Raw strings
 print("\nRaw string example:")
@@ -211,10 +251,13 @@ age = 8
 print("Using %% formatting:")
 print("name=%s and age=%d" % (name, age))
 print("name=%s and age=%d" % ("ankita", 6))
+<<<<<<< HEAD
 #output
 #Using %% formatting:
 #name=ashish and age=8
 #name=ankita and age=6
+=======
+>>>>>>> upstream/main
 
 # .format() method
 print("\nUsing .format() method:")
@@ -222,9 +265,13 @@ id_num = 10
 name = 'shankar'
 sal = 20000
 
+<<<<<<< HEAD
 
 # Different format styles
     #id_num name sal
+=======
+# Different format styles
+>>>>>>> upstream/main
 str1 = '{},{},{}'.format(id_num, name, sal)
 print(str1)  # 10,shankar,20000
 
@@ -233,11 +280,14 @@ print(str2)  # 10 - shankar - 20000
 
 str3 = 'id={}\nname={}\nsal={}'.format(id_num, name, sal)
 print(str3)
+<<<<<<< HEAD
 #output
 #id=10
 #name=shankar
 #sal=20000
 
+=======
+>>>>>>> upstream/main
 
 # ===========================
 # 12. STRING METHODS EXAMPLES
@@ -251,6 +301,7 @@ print(f"Original: {text}")
 print(f"Upper: {text.upper()}")
 print(f"Lower: {text.lower()}")
 print(f"Title: {text.title()}")
+<<<<<<< HEAD
 print(f"Capitalize: {text.capitalize()}") 
 #output
 #Original: welcome to the world of python
@@ -275,10 +326,26 @@ print(f"Join with '-': {'-'.join(words)}")
 #Split into words: ['welcome', 'to', 'the', 'world', 'of', 'python']
 #Join with '-': welcome-to-the-world-of-python
 
+=======
+print(f"Capitalize: {text.capitalize()}")
+
+# Search methods
+print(f"Find 'world': {text.find('world')}")
+print(f"Count 'o': {text.count('o')}")
+print(f"Starts with 'welcome': {text.startswith('welcome')}")
+print(f"Ends with 'python': {text.endswith('python')}")
+
+# Modification methods
+print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
+words = text.split()
+print(f"Split into words: {words}")
+print(f"Join with '-': {'-'.join(words)}")
+>>>>>>> upstream/main
 
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
+<<<<<<< HEAD
 print(f"isalnum(): {test_str.isalnum()}")#อักษร+เลข ไม่อักขระพิเศษ
 print(f"isalpha(): {test_str.isalpha()}")#อักษรอย่างเดียว
 print(f"isdigit(): {test_str.isdigit()}")#ตัวเลขอย่างเดียว
@@ -291,6 +358,13 @@ print(f"islower(): {test_str.islower()}")#เล็ก
 #isdigit(): False
 #isupper(): False
 #islower(): False
+=======
+print(f"isalnum(): {test_str.isalnum()}")
+print(f"isalpha(): {test_str.isalpha()}")
+print(f"isdigit(): {test_str.isdigit()}")
+print(f"isupper(): {test_str.isupper()}")
+print(f"islower(): {test_str.islower()}")
+>>>>>>> upstream/main
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
@@ -452,4 +526,108 @@ print(f"Method 2 (loop): {reversed_str}")
 # Method 3: Using join and reversed
 print(f"Method 3 (join): {''.join(reversed(text))}")
 
+<<<<<<< HEAD
 print("\n=== ALL EXAMPLES COMPLETED ===")
+=======
+print("\n=== ALL EXAMPLES COMPLETED ===")
+
+
+"""
+### 1) ข้อ 1: สวัสดีคนที่กรอกชื่อ
+เขียนโปรแกรมที่:
+- รับชื่อจากผู้ใช้
+- แสดงผลเป็นข้อความว่า “สวัสดี, <ชื่อ>!”
+- จากนั้นแสดงชื่อด้วยตัวพิมพ์ใหญ่ทั้งหมด
+
+ตัวอย่าง:
+- Input: `pim`
+- Output:
+  - สวัสดี, pim!
+  - PIM
+
+คำแนะนำ:
+- ใช้ `input()`
+- ใช้ `.upper()`
+
+---
+
+### 2) ข้อ 2: นับจำนวนตัวอักษร 'a' ในคำ
+เขียนโปรแกรมที่:
+- รับข้อความจากผู้ใช้
+- นับจำนวนตัวอักษร `'a'` ในข้อความ
+- แสดงผลจำนวนที่นับได้
+
+ตัวอย่าง:
+- Input: `banana`
+- Output: `มีตัวอักษร a ทั้งหมด 3 ตัว`
+
+คำแนะนำ:
+- ใช้ loop `for`
+- ใช้ `if letter == 'a'`
+
+---
+
+### 3) ข้อ 3: แยกคำและแปลงเป็นข้อความใหม่
+เขียนโปรแกรมที่:
+- รับประโยคจากผู้ใช้
+- แยกประโยคออกเป็นคำ ๆ
+- ต่อคำด้วยเครื่องหมาย `-`
+- แสดงผลข้อความที่ถูกจัดรูปแบบใหม่
+
+ตัวอย่าง:
+- Input: `python is easy`
+- Output: `python-is-easy`
+
+คำแนะนำ:
+- ใช้ `split()`
+- ใช้ `'-'.join()`
+
+---
+
+### 4) ข้อ 4: ตรวจสอบรหัสผ่านแบบง่าย
+เขียนโปรแกรมที่:
+- รับข้อความจากผู้ใช้
+- ตรวจว่าเป็นตัวเลขทั้งหมดหรือไม่
+- ถ้าเป็นตัวเลขทั้งหมด ให้แสดง “Valid number”
+- ถ้าไม่ใช่ ให้แสดง “Please enter a valid number!”
+
+ตัวอย่าง:
+- Input: `12345`
+- Output: `Valid number`
+
+- Input: `abc123`
+- Output: `Please enter a valid number!`
+
+คำแนะนำ:
+- ใช้ `isdigit()`
+- ใช้ `try/except` ถ้าต้องแปลงเป็น int
+
+---
+
+### 5) ข้อ 5: เขียนโปรแกรมจัดรูปแบบข้อมูลคน
+เขียนโปรแกรมที่:
+- รับชื่อ-นามสกุลจากผู้ใช้
+- แยกชื่อและนามสกุลออกจากกัน
+- แสดงผลเป็น:
+  - ชื่อเต็ม
+  - นามสกุล
+  - ชื่อย่อ (ตัวแรกของชื่อและนามสกุล)
+  - จำนวนคำทั้งหมดในชื่อเต็ม
+
+ตัวอย่าง:
+- Input: `pim chai`
+- Output:
+  - ชื่อเต็ม: pim chai
+  - ชื่อ: pim
+  - นามสกุล: chai
+  - ชื่อย่อ: p.c.
+  - จำนวนคำ: 2
+
+คำแนะนำ:
+- ใช้ `split()`
+- ใช้ index ของ list
+- ใช้ slicing เช่น `name[0]`
+
+---
+"""
+>>>>>>> upstream/main

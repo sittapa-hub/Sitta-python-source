@@ -93,6 +93,7 @@ def get_circle_info(radius):
     pi = 3.14159
     area = pi * radius * radius
     circumference = 2 * pi * radius
+<<<<<<< HEAD
     volumn = 4.0 / 3 * pi * radius ** 3
     return area, circumference, volumn
 
@@ -103,6 +104,16 @@ print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
 print(f"Volumn: {volumn:.2f}")
+=======
+    return area, circumference
+
+print("Circle calculations:")
+radius = 5
+area, circumference = get_circle_info(radius)
+print(f"Circle with radius {radius}:")
+print(f"Area: {area:.2f}")
+print(f"Circumference: {circumference:.2f}")
+>>>>>>> upstream/main
 print()
 
 # Example 3: Using returned values in expressions
@@ -114,24 +125,33 @@ def square(n):
     """Returns the square of a number"""
     return n * n
 
+<<<<<<< HEAD
 # จากตัวอย่างด้านบน ให้เขียน function ชื่อ square_root(n):
 def square_root(n):
     return n ** 0.5
 
+=======
+>>>>>>> upstream/main
 print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
 
+<<<<<<< HEAD
 print(f"square root of 25 =", square_root(25))
 print()
+=======
+>>>>>>> upstream/main
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
 # =============================================================================
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
 # Example 1: Function with default parameter
+<<<<<<< HEAD
 # default parameter ถ้าไม่ส่งค่า (title) มา ค่า(title) จะเท่ากับสิ่งที่กำหนดไว้ (Mr./Ms) ทันที
+=======
+>>>>>>> upstream/main
 def greet_with_title(name, title="Mr./Ms."):
     """Greets person with optional title"""
     print(f"Hello, {title} {name}!")

@@ -25,6 +25,7 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+<<<<<<< HEAD
 import random
 
 print("=== SIMPLE GUESSING GAME ===")
@@ -42,3 +43,5 @@ for i in range(6):
             print("Too high! Try again.")
         elif input_number < random_number:
             print("Too low! Try again.")
+=======
+>>>>>>> upstream/main

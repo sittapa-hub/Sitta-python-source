@@ -1,5 +1,9 @@
 class Car:
+<<<<<<< HEAD
     # Class attribute (shared by all instances) กำหนดตายตัว กันเปลี่ยนแปลงข้อมูล
+=======
+    # Class attribute (shared by all instances)
+>>>>>>> upstream/main
     wheels = 4
     vehicle_type = "Car"
     
@@ -19,15 +23,25 @@ class Car:
         """Method to get car information"""
         return f"{self.year} {self.brand} {self.model} - Mileage: {self.mileage} km"
     
+<<<<<<< HEAD
     @classmethod #method ของ class ติดอยู่กับ class ไม่ตามติดไปกับวัตถุ
+=======
+    @classmethod # method ของคลาส ติดอยู่กับคลาสไม่ตามลงไปที่วัตถุ
+>>>>>>> upstream/main
     def get_vehicle_type(cls):
         """Class method to access class attributes"""
         return cls.vehicle_type
 
 # Creating instances การสร้างวัตถุจากคลาส
+<<<<<<< HEAD
 car1 = Car("Toyota", "Camry", 2022) #mileage = 0
 car2 = Car("Honda", "Civic", 2021) #mileage = 0
 car3 = Car("Isuzu","D-Max",2022)
+=======
+car1 = Car("Toyota", "Camry", 2022)  # mileage = 0
+car2 = Car("Honda", "Civic", 2021) # mileage = 0
+car3 = Car("Isuzu", "D-Max", 2022) # mileage = 0 
+>>>>>>> upstream/main
 
 # Accessing class attributes
 print(f"All cars have {Car.wheels} wheels")
@@ -41,4 +55,8 @@ print(car2.get_info())
 print(car1.drive(100)) # car1 มี mileage = 0 + 100
 print(car2.drive(250)) # car2 มี mileage = 0 + 250
 
+<<<<<<< HEAD
 print(car1.drive(200)) # car1 มี mileage = 100 + 200
+=======
+print(car1.drive(200))
+>>>>>>> upstream/main
